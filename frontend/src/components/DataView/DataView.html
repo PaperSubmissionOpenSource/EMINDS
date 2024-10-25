@@ -1,0 +1,45 @@
+<div id="dataview" class="viewcontainer">
+    <el-row>
+        <div class="dataviewbody">
+            <el-row>
+              <el-col :span="4">
+                <div id="timewindow"></div>
+              </el-col>
+                <el-col :span="4">
+                  <select id="timewindow" class="select_window" v-model="time_window">
+                    <option value="1">1 week</option>
+                    <option value="2">2 weeks</option>
+                    <option value="4">1 month</option>
+                    <option value="8">2 months</option>
+                  </select>
+                </el-col>
+              <el-col :span="2">
+                <div id="group1_title"></div>
+              </el-col>
+                <el-col :span="5">
+                  <select id="group1" class="select_group" v-model="data_group1">
+                    <option value="2016MHOT">2016_MH-OT</option>
+                    <option value="2016MHMH">2016_MH-MH</option>
+                    <option value="2016MHSW">2016_MH-SW</option>
+                    <option value="2020MHOT">2020_MH-OT</option>
+                    <option value="2020MHMH">2020_MH-MH</option>
+                    <option value="2020MHSW">2020_MH-SW</option>
+                  </select>
+                </el-col>
+                <el-col :span="2">
+                  <div id="group2_title"></div>
+                </el-col>
+                <el-col :span="3">
+                  <select id="group2" class="select_group" v-model="data_group2">
+                    <option value="2016MHOT">2016_MH-OT</option>
+                    <option value="2016MHMH">2016_MH-MH</option>
+                    <option value="2016MHSW">2016_MH-SW</option>
+                    <option value="2020MHOT">2020_MH-OT</option>
+                    <option value="2020MHMH">2020_MH-MH</option>
+                    <option value="2020MHSW">2020_MH-SW</option>
+                  </select>
+                </el-col>
+              </el-row>
+        </div>
+    </el-row>
+</div>

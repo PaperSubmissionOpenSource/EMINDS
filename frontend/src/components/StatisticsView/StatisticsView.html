@@ -1,0 +1,48 @@
+<div id="statisticsview" class="viewcontainer">
+    <el-row>
+        <el-col :span="24">
+            <div class="patternviewheader">Pattern View</div>
+        </el-col>
+    </el-row>
+    <el-row>
+        <div class="patternviewbody">
+            <el-row :span="6">
+                <div class="patternviewcontrol">
+                    <el-row :span="4">
+                        <div id="selection"></div>
+                    </el-row>
+                    <el-row :span="20">
+                        <el-col :span="11">
+                            <div id="title"></div>
+                        </el-col>
+                        <el-col :span="11">
+                            <select id="start" class="select" v-model="start">
+                                <option value="0">none</option>
+                            </select>
+                            <select id="end" class="select" v-model="end">
+                                <option value="0">none</option>
+                            </select>
+                            <select id="type" class="select" v-model="type">
+                                <option value="0">frequency</option>
+                                <option value="1">positive degree</option>
+                                <option value="2">negative degree</option>
+                                <option value="3">positive change</option>
+                                <option value="4">negative change</option>
+                            </select>
+                            <select id="sort" class="select" v-model="sort">
+                                <option value="1">ascending</option>
+                                <option value="0">descending</option>
+                            </select>
+                        </el-col>
+                    </el-row>
+                </div>
+            </el-row>
+            <el-row :span="1">
+                <div class="patternviewresult"></div>
+            </el-row>
+            <el-row :span="17">
+                <div class="patternviewdisplay"></div>
+            </el-row>
+        </div>
+    </el-row>
+</div>
