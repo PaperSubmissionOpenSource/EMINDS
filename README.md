@@ -3,7 +3,10 @@ This is the template repo for vuejs and flask project
 1. set up frontend
 ```
 cd frontend
+
+# You can skip this step if you use the packages "node_modules"
 npm install
+
 npm run serve
 ```
 
